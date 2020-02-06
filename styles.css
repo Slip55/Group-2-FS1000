@@ -1,0 +1,188 @@
+/***** GLOBAL STYLES *****/
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 32px 0px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/***** MAIN NAV *****/
+
+.main-menu {
+    background-color: #e6e6e6;
+    padding: 12px 16px;
+}
+
+.main-menu a {
+    text-decoration: none;
+}
+
+#logo {
+    float: left;
+}
+
+#logo img {
+    width: 40px;
+}
+
+
+#menu-links-right {
+    float: right;
+    margin-top: 40px;
+}
+
+.menu-link {
+    margin-left: 32px;  
+}
+
+
+/***** INDEX PAGE *****/
+
+.intro, .slideshow{
+    float: left;
+}
+
+.intro{
+    width: 33.33%;
+    padding: 32px;
+}
+
+.intro p {
+    font-size: 1.5em;
+}
+
+.button {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 16px;
+    margin: 24px 0px;
+    text-decoration: none;
+}
+
+.slideshow {
+    width: 66.66%;
+}
+
+.slideshow img {
+    width: 100%;
+}
+
+
+/**** GALLERY PAGE ****/
+
+.gallery-main {
+    max-width: 1140px;
+    margin: 56px auto;
+    padding: 0px 16px;
+}
+
+
+.gallery-section img {
+    width: 100%;
+}
+
+.gallery-section h2 {
+    margin-top: 56px;
+}
+
+.button-about-us {
+    margin-top: 72px;
+    }
+
+/***** ABOUT US PAGE *****/
+
+.about-main {
+    max-width: 1140px;
+    margin: 56px auto;
+    padding: 0px 16px;
+}
+
+.about-team p {
+    width: 66.66%;
+    margin-bottom: 56px;
+}
+
+.bio-group {
+
+}
+
+.bio {
+    float: left;
+    width: 33.33%;
+    padding: 0px 48px 0px 0px;
+}
+
+
+.bio-last {
+    padding: 0px;
+}
+
+.bio-img {
+    
+}
+
+.clear-left {
+    clear: left;
+}
+
+/***** CONTACT PAGE *****/
+
+.three-column {
+    float: left;
+    width: 33.33%;
+    border: 1px solid black;
+
+}
+
+.contact-info {
+    
+}
+
+.form {
+    
+}
+
+.fjs-group-social-links {
+    
+}
+
+.fjs-group-social-links a {
+    display: block;
+}
+    
+
+
+
+
+/***** FOOTER *****/
+
+footer {
+    background-color: #e6e6e6;
+    padding: 16px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
