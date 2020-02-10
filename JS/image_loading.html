@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            //Retrieve all the files from the FileList object
+            let bCheckEnabled = true;
+            let bFinishCheck = false;
+
+            let img;
+            let imgArray = new Array();
+            let i = 1;
+
+            let myInterval = setInterval(loadImage, 1);
+
+            function loadImage() {
+                if (bFinishCheck) {
+                    clearInterval(myInterval);
+                    //Take array and place onto a webpage
+                    let container = document.getElementById("photos");
+                    for (let x=0, len = imgArray.length; x < len; ++x) {
+                        let img2 = new Image();
+                        img2.src = imgArray[x];
+                        container.appendChild(img2);
+                        console.log(img2.src);
+                    }
+                    return;
+                }
+
+                if (bCheckEnabled) {
+                    bCheckEnabled = false;
+
+                    img = new Image();
+                    img.onload = fExists;
+                    img.onerror = fDoesntExist;
+                    if(i == 1)
+                    img.src = 'Images/image' + i + '.jpg';
+                    else
+                    img.src = 'Images/image' + i + '.jpeg';
+                }
+            }
+
+            function fExists() {
+                imgArray.push(img.src);
+                i++;
+                bCheckEnabled = true;
+            }
+
+            function fDoesntExist() {
+                bFinishCheck = true;
+            }
+            //Button that sorts array and reprints them - impossible?
+            
+            
+        </script>
+        <style type="text/CSS">
+        div img{
+            width: 200px;
+            height: 100px;
+            float: left;
+            margin: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="photos"></div>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+To use images
+Place images in a folder named for the page where they will be displayed
+Name all images image##, where ## is an ascending number in the folder
+All images need to be the same type (.jpg, .png, jpeg, etc), we can change this per folder but it would be best jsut to have one for all
+    ex. image1, image2, etc
+In html file - set a <div> id to 'photos'
+             - set a <h3 hidden> id to the folder name where this pages image sit
