@@ -3,109 +3,7 @@
   <head>
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      .three-column {
-        width: 33.33%;
-        border: 0px;
-        display: inline-block;
-        position: relative;
-        /**WT: Suggestion to replace original style in the css sheet**/
-      }
-
-      .three-column a {
-        text-decoration: none;
-        color: initial;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-
-      h3 {
-        color: orangered;
-        padding-bottom: 8px;
-        margin: 0px;
-        font-weight: bolder;
-        font-size: 24px;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-
-      .contact-info {
-        vertical-align: middle;
-        padding-right: 10px;
-        /**WT: Suggestion to replace original style in the css sheet**/
-      }
-
-      .three-column p:hover {
-        transform: scale(1.05);
-        font-weight: bold;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-      .form {
-        /**WT: Suggestion to replace original style and change its name in the css sheet**/
-      }
-      .fill {
-        margin-bottom: 8px;
-        width: 110%;
-        display: table;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-
-      .fill input[type="text"],
-      input[type="email"],
-      input[type="tel"],
-      textarea {
-        width: 100%;
-        border: 0.5px groove lightgray;
-        border-radius: 2px;
-        resize: none;
-        font-size: 1em;
-        font-family: initial;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-
-      .fill input[type="text"]:focus,
-      input[type="email"]:focus,
-      input[type="tel"]:focus,
-      textarea:focus {
-        border: 0.5px groove #158050;
-        box-shadow: 1px 1px 3px #158050;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-      .fill input[type="submit"] {
-        border: 0px;
-        margin: 0px;
-        padding: 8px 24px;
-        background-color: orangered;
-        color: white;
-        font-size: 1em;
-        font-family: initial;
-        font-weight: bold;
-        right: 0px;
-        float: right;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-      .fill input[type="submit"]:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-      h5 {
-        color: goldenrod;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        /**WT:To be transferred to the css sheet after .form**/
-      }
-      .fjs-group-social-links {
-        position: absolute;
-        width: 75%;
-        right: 0px;
-        /**WT: Suggestion to replace original style in the css sheet**/
-      }
-
-      .fjs-group-social-links a {
-        font-weight: bolder;
-        text-shadow: 1px 2px 3px grey;
-        /**WT: Suggestion to replace original style in the css sheet**/
-      }
-    </style>
+    <link rel="stylesheet" href="styles-contact.css" />
   </head>
   <body>
     <!--Main Nav-->
@@ -116,7 +14,6 @@
       <div id="menu-links-right">
         <a href="our-work.html" class="menu-link">Our Work</a>
         <a href="about.html" class="menu-link">About Us</a>
-        <a href="contact.html" class="menu-link">Contact Us</a>
       </div>
     </nav>
     <!--Main-->
@@ -124,8 +21,16 @@
       <!--Contact Info-->
       <section>
         <!--Details-->
-        <div class="three-column">
+        <div class="contact-col-1">
           <h3>Business Inquiry</h3>
+          <p>
+            <img
+              src="images/Phone.png"
+              width="32px"
+              class="contact-info"
+              alt="Our Phone"
+            /><a href="tel://6476543210" target="_blank">(647)654-3210</a>
+          </p>
           <p>
             <img
               src="images/Email.png"
@@ -135,14 +40,6 @@
             /><a href="mailto:group2@yorku.ca" target="_blank"
               >group2@yorku.ca</a
             >
-          </p>
-          <p>
-            <img
-              src="images/Phone.png"
-              width="32px"
-              class="contact-info"
-              alt="Our Phone"
-            /><a href="tel://6476543210" target="_blank">(647)654-3210</a>
           </p>
           <p>
             <img
@@ -156,7 +53,8 @@
           </p>
         </div>
         <!--Form-->
-        <div class="three-column">
+        <div class="contact-col-2">
+          <h3>Contact Us</h3>
           <form action="action.php" method="post">
             <div class="fill">
               <input
@@ -178,10 +76,10 @@
             </div>
             <div class="fill">
               <input
-                type="tel"
-                id="guessTel"
-                name="guessTel"
-                placeholder="&nbsp;&nbsp;Phone"
+                type="text"
+                id="guessTopic"
+                name="guessTopic"
+                placeholder="&nbsp;&nbsp;Topic"
                 required
               />
             </div>
@@ -202,32 +100,6 @@
               <input type="submit" value="Submit" />
             </div>
           </form>
-        </div>
-        <!--FJS Group Social Media Links-->
-        <div class="three-column">
-          <div class="fjs-group-social-links">
-            <h3>Visit Our Photographers</h3>
-            <p>
-              <a href="http://www.yorku.ca/index.html" target="_blank"
-                >Member 1 Social Link</a
-              >
-            </p>
-            <p>
-              <a href="http://www.yorku.ca/index.html" target="_blank"
-                >Member 2 Social Link</a
-              >
-            </p>
-            <p>
-              <a href="http://www.yorku.ca/index.html" target="_blank"
-                >Member 3 Social Link</a
-              >
-            </p>
-            <p>
-              <a href="http://www.yorku.ca/index.html" target="_blank"
-                >Member 4 Social Link</a
-              >
-            </p>
-          </div>
         </div>
       </section>
     </main>
