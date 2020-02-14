@@ -62,14 +62,14 @@
     }
 
     .fill input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="tel"]:focus,
-    textarea:focus {
+    .fill input[type="email"]:focus,
+    .fill input[type="tel"]:focus,
+    .fill textarea:focus {
         border: 0.5px groove #158050;
         box-shadow: 1px 1px 3px #158050;
     }
 
-    .fill input[type="submit"] {
+    .fill input[type="button"] {
         border: 0px;
         margin: 0px;
         padding: 8px 24px;
@@ -82,7 +82,7 @@
         float: right;
     }
 
-    .fill input[type="submit"]:hover {
+    .fill input[type="button"]:hover {
         transform: scale(1.05);
         opacity: 0.9;
     }
@@ -91,6 +91,8 @@
         color: goldenrod;
         margin-top: 2px;
         margin-bottom: 2px;
+        float: right;
+        height: 16px;
     }
 
     .fjs-group-social-links {

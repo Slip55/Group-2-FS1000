@@ -4,6 +4,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles-contact.css" />
+    <script type="text/javascript" src="script-contact.js"></script>
   </head>
   <body>
     <!--Main Nav-->
@@ -92,12 +93,11 @@
               ></textarea>
             </div>
             <div class="fill">
-              <h5>
-                We will respond to your inquiry within 24 hours.
-              </h5>
+              <input type="button" value="Submit" onclick="myMessage()" />
             </div>
             <div class="fill">
-              <input type="submit" value="Submit" />
+              <h5 id="click-msg"></h5>
+              <script type="text/javascript" src="contact.js"></script>
             </div>
           </form>
         </div>
