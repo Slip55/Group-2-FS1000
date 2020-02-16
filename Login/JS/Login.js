@@ -1,7 +1,3 @@
-
-let lnameBase = "Login ID:";
-let pnameBase = "Password:";
-
 function LoginNow(id, password) {
     if(id == "Admin"){
         if(password == "Admin"){
@@ -9,16 +5,28 @@ function LoginNow(id, password) {
             window.location.href = "Admin.html";
         }
         else if(password == ""){
-            document.getElementById("lname").innerHTML = lnameBase + " Please Enter a Password";
+            document.getElementById("pnameLabel").innerHTML = " Please Enter a Password";
         }
         else{
-            document.getElementById("lname").innerHTML = lnameBase + " Password is Incorrect";
+            document.getElementById("pnameLabel").innerHTML = " Password is Incorrect";
         }
     }
     else if(id == ""){
-        document.getElementById("lname").innerHTML = lnameBase + " Please Enter an ID";
+        if(password == ""){
+            document.getElementById("pnameLabel").innerHTML = " Please Enter a Password";
+        }
+        else if(password != "Admin"){
+            document.getElementById("pnameLabel").innerHTML = " Password is Incorrect";
+        }
+        document.getElementById("lnameLabel").innerHTML = " Please Enter an ID";
     }
     else{
-        document.getElementById("lname").innerHTML = lnameBase + " Id is Incorrect";
+        if(password == ""){
+            document.getElementById("pnameLabel").innerHTML = " Please Enter a Password";
+        }
+        else if(password != "Admin"){
+            document.getElementById("pnameLabel").innerHTML = " Password is Incorrect";
+        }
+        document.getElementById("lnameLabel").innerHTML = " Id is Incorrect";
     }
 }
