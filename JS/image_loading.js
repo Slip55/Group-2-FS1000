@@ -15,6 +15,7 @@ function loadImage() {
         for (let x = 0, len = imgArray.length; x < len; x++) { //For all Images
             let getImg = new Image();
             getImg.src = imgArray[x]; //Get next image from array
+            //Set alt for images
             let theme = document.getElementById("theme").innerHTML;
             getImg.alt = theme+(x+1);
             //Set links to images
