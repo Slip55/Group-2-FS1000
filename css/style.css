@@ -1,0 +1,323 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+html, body{
+    height: 100%;
+    margin: 0;
+    
+}
+
+
+
+body{
+    
+    background-color: grey;
+    
+}
+
+
+header{
+    background-color: rgb(224, 224, 223);
+}
+
+header::after{
+
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    height:100px;
+    width: 80px;
+    float: left;
+    padding: 20px 0;
+}
+
+nav{
+    float: right;
+}
+
+
+nav ul{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+nav li{
+
+    display: inline-block;
+    margin-left: 90px;
+    padding-top:70px;
+}
+
+
+
+
+.nav-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+header::after{
+
+    content:'';
+    display: table;
+    clear: both;
+}
+
+
+.logo{
+    height:100px;
+    width: 80px;
+    float: left;
+    padding: 20px 0;
+}
+
+
+nav{
+    float: right;
+}
+
+
+nav ul{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+nav li{
+
+    display: inline-block;
+    margin-left: 90px;
+    padding-top:70px;
+}
+
+/* This is footer section*/
+
+#footer{
+
+    background-color: rgb(224, 224, 223);
+    padding-top: 80px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 50px;
+   
+}
+
+/*home body block*/
+.company-intro{
+    position: relative;
+    width: 200px;
+    padding-top: 200px;
+    padding-left: 200px;
+    float: left;
+}
+
+.slider-container{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin-left:1000px;
+    padding-top: 90px;
+    overflow:hidden;
+    
+}
+
+.image-container{
+    width: 3200px;
+    height: 600px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+.slider-image{
+     float: left;
+     margin: 0px;
+     padding: 0px;
+}
+
+
+.button-container{
+    top:-20px;
+    position: relative;
+}
+
+
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-container{
+    left:-800px;
+}
+
+#slider-image-3:target ~ .image-container{
+    left:-1600px;
+}
+
+#slider-image-4:target ~ .image-container{
+    left: -2400px;
+}
+
+
+/*contact page */
+
+
+#contact-info{
+
+    margin: 300px 300px;
+    
+}
+
+
+.wrapper{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    font-family: sans-serif;
+    position: absolute;
+    top:20%;
+    left:55%;
+    max-width: 350px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 2px rgba(254, 254,253, 253);
+}
+
+
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+}
+
+
+.wrapper .input_area{
+    margin-bottom: 10px;
+}
+
+
+.wrapper .input_area input[type="text"],
+.wrapper textarea{
+    width: 100%;
+    border:1px solid #e0e0e0;
+    padding: 10px;
+}
+
+.wrapper textarea{
+    height: 80px;
+    resize: none;
+}
+
+
+.wrapper  .btn input[type="submit"]{
+    border:0;
+    margin-top: 15px;
+    padding:10px;
+    width: 100%;
+    color: darkgray;
+    background-color: darkslateblue;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;   
+
+}
+
+
+.wrapper #error_message{
+    margin-bottom: 20px;
+    padding:0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+
+/* contributor page*/
+
+.c-title{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 40px;
+    font-family: sans-serif;
+   
+}
+
+.gallery{
+    height: 80%;
+    width:100%;
+    display:flex;
+    margin: 5% auto 0;
+    box-sizing: border-box;
+}
+
+
+.image-box{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+}
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+
+.image-box:hover{
+
+    flex-basis: 50%;
+}
+
+.active{
+    flex-basis: 50%;
+
+}
+
+.gallery:hover .active{
+    flex-basis: 0;
+}
+
+
+.image-box:nth-child(1):hover{
+    flex-basis: 50%;
+}
+
+

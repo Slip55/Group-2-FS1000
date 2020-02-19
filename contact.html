@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact </title> 
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script src="form.js"></script>
+
+</head>
+<body>
+
+    <!--This is header-->
+    <header>
+        <div class="nav-container">
+          <img src="logo/logo.png" alt="logo" class="logo">
+          <h1>FJS Group</h1>
+ 
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contributor.html">Contributor</a></li>
+              
+ 
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+
+      <!--contact info-->
+
+      <div id="contact-info">
+          <h1>FJS Group</h1>
+          <p>Tel: 416-000-0000</p>
+          <p>Email:FJS@fjsgroup.com</p>
+          <p>Address: 123 first street. Ontario. Canada</p>
+      </div>
+
+
+      <!--contact form-->
+
+      <div class="wrapper">
+          <h2>contact us</h2>
+
+          <div id="error_message"></div>
+
+          <form id="fjsform" onsubmit = "return validation()">
+
+              <div class="input_area">
+                  <input type="text" placeholder="Name" id="name">
+              </div>
+
+              <div class="input_area">
+                <input type="text" placeholder="Subject" id="subject">
+              </div>
+
+            <div class="input_area">
+                <input type="text" placeholder="Phone" id="phone">
+            </div>
+
+
+            <div class="input_area">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+
+
+            <div class="input_area">
+                <textarea id="message" placeholder="Message"></textarea>
+            </div>
+
+
+            <div class="btn">
+                <input type="submit">
+            </div>
+
+
+          </form>
+      </div>
+
+      <!--footer-->
+      <footer>
+
+      <h2>copyright@FJS Group</h2>
+    </footer>
+
+</body>
+</html>
