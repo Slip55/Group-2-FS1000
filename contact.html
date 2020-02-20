@@ -4,7 +4,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles-contact.css" />
-    <script type="text/javascript" src="script-contact.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
   </head>
   <body>
     <!--Main Nav-->
@@ -58,47 +58,52 @@
           <h3>Contact Us</h3>
           <form action="action.php" method="post">
             <div class="fill">
+              <div id="errName" hidden></div>
               <input
                 type="text"
-                id="guessName"
-                name="guessName"
+                id="guestName"
+                name="guestName"
                 placeholder="&nbsp;&nbsp;Name"
+                onkeyup="formcheck();formCheckMsg()"
                 required
               />
             </div>
             <div class="fill">
+              <div id="errEmail" hidden></div>
               <input
                 type="email"
-                id="guessEmail"
-                name="guessEmail"
+                id="guestEmail"
+                name="guestEmail"
                 placeholder="&nbsp;&nbsp;Email"
+                onkeyup="formcheck();formCheckMsg()"
                 required
               />
             </div>
             <div class="fill">
+              <div id="errTopic" hidden></div>
               <input
                 type="text"
-                id="guessTopic"
-                name="guessTopic"
+                id="guestTopic"
+                name="guestTopic"
                 placeholder="&nbsp;&nbsp;Topic"
+                onkeyup="formcheck();formCheckMsg()"
                 required
               />
             </div>
             <div class="fill">
+              <div id="errMsg" hidden></div>
               <textarea
-                id="guessMsg"
-                name="guessMsg"
+                id="guestMsg"
+                name="guestMsg"
                 rows="9"
                 placeholder="&nbsp;Message..."
+                onkeyup="formcheck();formCheckMsg()"
+                required
               ></textarea>
             </div>
             <div class="fill">
-              <input type="button" value="Submit" onclick="myMessage()" />
-            </div>
-            <div class="fill">
-              <h5 id="click-msg"></h5>
-              <script type="text/javascript" src="contact.js"></script>
-            </div>
+              <div id="formCheckMsg" class="formCheckMsg"></div>
+              <input type="button" value="Submit" onclick="submitPrompt()">
           </form>
         </div>
       </section>

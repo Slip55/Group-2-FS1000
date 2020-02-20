@@ -87,12 +87,8 @@
         opacity: 0.9;
     }
 
-    h5 {
-        color: goldenrod;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        float: right;
-        height: 16px;
+    .fill div {
+        float: left;
     }
 
     .fjs-group-social-links {
@@ -116,4 +112,8 @@
         .contact-col-2 {
             margin-top: 1em;
         }
+    }
+
+    * {
+        font-family: Noto Serif;
     }
