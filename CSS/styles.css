@@ -54,7 +54,6 @@ h1 {
     float: left;
 }
 
-
 #logo img {
     width: 40px;
 }
@@ -63,7 +62,6 @@ h1 {
     font-size: 1.25em;
     margin: 40px 10px 0px 10px;
 }
-
 
 a#title:link {
     color: black;
@@ -90,7 +88,6 @@ a#title:active {
 .menu-link {
     margin-left: 32px;  
 }
-
 
 /***** INDEX PAGE *****/
 .slider-container{
@@ -169,16 +166,7 @@ a#title:active {
     width: 66.66%;
 }
 
-<<<<<<< HEAD:CSS/styles.css
 /**** GALLERY PAGE ****/
-=======
-.slideshow img {
-    width: 100%;
-}
-
-
-/**** Contributers PAGE ****/
->>>>>>> joanna:styles.css
 
 .contributers-main {
     max-width: 1140px;
@@ -189,13 +177,6 @@ a#title:active {
 .contributer-bg {
     background-color: #e6e6e6;
 }
-
-<<<<<<< HEAD:CSS/styles.css
-.button-about-us {
-    margin-top: 72px;
-}
-=======
->>>>>>> joanna:styles.css
 
 .bio {
     float: left;
@@ -212,20 +193,14 @@ a#title:active {
     width: 66.66%;
 }
 
-
-
 .mini-gallery img {
     float: left;
-    max-width: 50%;
+    max-width: 25%;
 }
 
 .section-spacer {
     margin-top: 80px;
 }
-
-
-
-
 
 /***** CONTACT PAGE *****/
 
