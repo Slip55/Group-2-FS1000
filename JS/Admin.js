@@ -1,4 +1,36 @@
 
+function opentable(table){
+    let maintable = document.getElementById("maintable");
+    let gallery1 = document.getElementById("gallery1table");
+    let gallery2 = document.getElementById("gallery2table");
+    let gallery3 = document.getElementById("gallery3table");
+    
+    if(table == 0){
+        maintable.style.display = "block";
+        gallery1.style.display = "none";
+        gallery2.style.display = "none";
+        gallery3.style.display = "none";
+    }
+    else if(table == 1){
+        maintable.style.display = "none";
+        gallery1.style.display = "block";
+        gallery2.style.display = "none";
+        gallery3.style.display = "none";
+    }
+    else if(table == 2){
+        maintable.style.display = "none";
+        gallery1.style.display = "none";
+        gallery2.style.display = "block";
+        gallery3.style.display = "none";
+    }
+    else if(table == 3){
+        maintable.style.display = "none";
+        gallery1.style.display = "none";
+        gallery2.style.display = "none";
+        gallery3.style.display = "block";
+    }
+}
+/*
 let checkNextImg_flag = true; //Boolean to function call itself
 let foundAllImg_flag = false; //Breaks loop
 
@@ -93,3 +125,4 @@ function imgFound() {
 function imgNotFound() {
     foundAllImg_flag = true; //Loads Images
 }
+*/
