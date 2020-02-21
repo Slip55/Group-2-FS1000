@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <script src="JS/Login.js">
+
+        </script>
+
+        <style type="text/CSS">
+            #loginWrapper{
+                width: fit-content;
+                height: fit-content;
+                background-color: grey;
+                padding: 5px;
+            }
+            #loginBut{
+                margin-top: 10px;
+            }
+            label{
+                text-align: left;
+                width: 100%;
+            }
+            span{
+                color: #B90000;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loginWrapper">
+            <form>
+                <label for="lname">Login ID:</label><br />
+                <label><b><span id="lnameLabel"></span></b></label><br />
+                <input type="text" id="lname" name="lname" value=""><br />
+                <label for="pname">Password:</label><br />
+                <label><b><span id="pnameLabel"></span></b></label><br />
+                <input type="text" id="pname" name="pname" value=""><br />
+                <input type="button" id="loginBut"
+                        onclick="LoginNow(document.getElementById('lname').value,
+                        document.getElementById('pname').value)"
+                        value="LOGIN">
+          </form> 
+        </div>
+    </body>
+</html>
