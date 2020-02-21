@@ -202,11 +202,13 @@ a#title:active {
 .mini-gallery {
     float: right;
     width: 66.66%;
+    padding-top: 5%;
+    padding-right: 5%;
 }
 
 .mini-gallery img {
     float: left;
-    max-width: 25%;
+    max-width: 50%;
 }
 
 .section-spacer {
@@ -253,9 +255,16 @@ a#title:active {
     background-color: lightgray;
 }
 
+.adminPage img{
+    width: 90;
+    height: 60;
+}
+
 .adminbutton{
     margin-left:50px;
 }
+
+
 
 /***** FOOTER *****/
 
