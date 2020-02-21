@@ -1,0 +1,124 @@
+    /**WT: Suggestion to replace original style in the css sheet**/
+    .contact-col-1 {
+        width: 40%;
+        border: 0px;
+        position: relative;
+        float: left;
+    }
+
+    .contact-col-2 {
+        width: 60%;
+        border: 0px;
+        position: relative;
+        float: left;
+    }
+
+    h3 {
+        color: orangered;
+        padding-bottom: 8px;
+        margin: 0px;
+        font-weight: bolder;
+        font-size: 24px;
+
+    }
+
+    .contact-info {
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+
+    .contact-col-1 p a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .contact-col-1 p:hover {
+        transform: scale(1.05);
+        font-weight: bold;
+    }
+
+    .operationhour {
+        width: 60%;
+        font-size: 0.9em;
+    }
+
+    .contact-col-2 p:hover {
+        transform: scale(1.05);
+        font-weight: bold;
+    }
+
+    .fill {
+        margin-bottom: 8px;
+        width: 100%;
+        display: table;
+        /**WT:To be transferred to the css sheet after .form**/
+    }
+
+    .fill input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        border: 0.5px groove lightgray;
+        border-radius: 2px;
+        resize: none;
+        font-size: 1em;
+        font-family: initial;
+    }
+
+    .fill input[type="text"]:focus,
+    .fill input[type="email"]:focus,
+    .fill input[type="tel"]:focus,
+    .fill textarea:focus {
+        border: 0.5px groove #158050;
+        box-shadow: 1px 1px 3px #158050;
+    }
+
+    .fill input[type="button"] {
+        border: 0px;
+        margin: 0px;
+        padding: 8px 24px;
+        background-color: orangered;
+        color: white;
+        font-size: 1em;
+        font-family: initial;
+        font-weight: bold;
+        right: 0px;
+        float: right;
+    }
+
+    .fill input[type="button"]:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+
+    .fill div {
+        float: left;
+    }
+
+    .fjs-group-social-links {
+        position: absolute;
+        width: 75%;
+        right: 0px;
+    }
+
+    .fjs-group-social-links a {
+        font-weight: bolder;
+        text-shadow: 1px 2px 3px grey;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        /* For mobile phones ro smaller screen resulution */
+        [class*="contact-col-"] {
+            width: 100%;
+        }
+
+        .contact-col-2 {
+            margin-top: 1em;
+        }
+    }
+
+    * {
+        font-family: Noto Serif;
+    }
