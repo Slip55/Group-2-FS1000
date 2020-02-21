@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let today;
   switch (new Date().getDay()) {
     case 0:
@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById(today).style.fontWeight = "bold";
   let hourNow = new Date().getHours();
   let minNow = new Date().getMinutes();
-  let timeNow = hourNow + minNow / 60;
+  let timeNow = hourNow * 100 + minNow;
   const optDesc =
     timeNow < optHour[new Date().getDay()][1] ||
-    timeNow > optHour[new Date().getDay()][2]
+      timeNow > optHour[new Date().getDay()][2]
       ? "<span style='font-size:1.1em; color:orangered'><b>We are closed.</span>"
       : "<span style='font-size:1.1em; color:green'><b>We are open.</span>";
 

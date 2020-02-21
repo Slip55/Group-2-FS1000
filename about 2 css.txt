@@ -1,0 +1,1 @@
+I didn't change the original css file created by Joanna. I created another one styles-contact.css for the contact page specifcally. But my page uses both css files.
