@@ -34,7 +34,8 @@ function loadImage() {
         current_img.onload = imgFound; //if image loads, save this image
         current_img.onerror = imgNotFound; //if image doesnt load, end loop
         let pageID = document.getElementById("pageid").innerHTML; //Grab object to set what folder images are in
-        current_img.src = `Images/${pageID}/image` + img_counts + '.jpeg'; //set source of image
+        let imageid = document.getElementById("imageid").innerHTML; //Grab object to set what the images are called
+        current_img.src = `images/${pageID}/${imageid}` + img_counts + '.jpg'; //set source of image
     }
 }
 

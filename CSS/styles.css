@@ -215,6 +215,13 @@ a#title:active {
     margin-top: 80px;
 }
 
+#photos img{
+    width: 300px;
+    float: left;
+    margin: 10px;
+    border: 10px ridge grey;
+}
+
 /***** CONTACT PAGE *****/
 
 .three-column {
