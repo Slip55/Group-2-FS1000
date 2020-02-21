@@ -3,6 +3,7 @@
     <head>
         <title>Sign In</title>
         <link rel="stylesheet" href="CSS/styles.css">
+        <script src="JS/Login.js"></script>
     </head>
     <body>
                 <!--Main Nav-->
@@ -23,7 +24,20 @@
                 </nav>
         <!--Main-->
         <main class="clearfix">
-                <p>Sign in here</p>
+            <div id="loginWrapper">
+                <form>
+                    <label class="loginlabel" for="lname">Login ID:</label><br />
+                    <input type="text" id="lname" name="lname" value="">
+                    <label class="loginlabel"><b><span id="lnameLabel"></span></b></label><br /><br />
+                    <label class="loginlabel" for="pname">Password:</label><br />
+                    <input type="text" id="pname" name="pname" value="">
+                    <label class="loginlabel"><b><span id="pnameLabel"></span></b></label><br />
+                    <input type="button" id="loginBut"
+                            onclick="LoginNow(document.getElementById('lname').value,
+                            document.getElementById('pname').value)"
+                            value="LOGIN">
+              </form> 
+            </div>
         </main>
         <!--Footer-->
         <footer>

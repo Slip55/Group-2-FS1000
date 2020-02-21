@@ -27,6 +27,6 @@ function LoginNow(id, password) {
         else if(password != "Admin"){
             document.getElementById("pnameLabel").innerHTML = " Password is Incorrect";
         }
-        document.getElementById("lnameLabel").innerHTML = " Id is Incorrect";
+        document.getElementById("lnameLabel").innerHTML = " ID is Incorrect";
     }
 }
