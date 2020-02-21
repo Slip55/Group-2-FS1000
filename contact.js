@@ -1,3 +1,57 @@
+document.addEventListener("DOMContentLoaded", function() {
+  let today;
+  switch (new Date().getDay()) {
+    case 0:
+      today = "Sun";
+      break;
+
+    case 1:
+      today = "Mon";
+      break;
+
+    case 2:
+      today = "Tue";
+      break;
+
+    case 3:
+      today = "Wed";
+      break;
+
+    case 4:
+      today = "Thu";
+      break;
+
+    case 5:
+      today = "Fri";
+      break;
+
+    case 6:
+      today = "Sat";
+      break;
+  }
+  const optHour = [
+    [0, 1300, 1730],
+    [1, 900, 2030],
+    [2, 900, 2030],
+    [3, 900, 2030],
+    [4, 900, 2030],
+    [5, 900, 2030],
+    [6, 1300, 1830]
+  ];
+  document.getElementById(today).style.fontWeight = "bold";
+  let hourNow = new Date().getHours();
+  let minNow = new Date().getMinutes();
+  let timeNow = hourNow + minNow / 60;
+  const optDesc =
+    timeNow < optHour[new Date().getDay()][1] ||
+    timeNow > optHour[new Date().getDay()][2]
+      ? "<span style='font-size:1.1em; color:orangered'><b>We are closed.</span>"
+      : "<span style='font-size:1.1em; color:green'><b>We are open.</span>";
+
+  document.getElementById("operationStat").innerHTML = timeNow;
+  document.getElementById("operationStat").innerHTML = optDesc;
+});
+
 let formID = new Array();
 formID[0] = "guestName";
 formID[1] = "guestEmail";

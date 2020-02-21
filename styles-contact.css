@@ -37,6 +37,11 @@
         font-weight: bold;
     }
 
+    .operationhour {
+        width: 60%;
+        font-size: 0.9em;
+    }
+
     .contact-col-2 p:hover {
         transform: scale(1.05);
         font-weight: bold;
