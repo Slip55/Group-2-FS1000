@@ -4,8 +4,9 @@
         border: 0px;
         position: relative;
         float: left;
-        padding-left: 30px;
+        padding-left: 5%;
         padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .contact-col-2 {
@@ -13,8 +14,9 @@
         border: 0px;
         position: relative;
         float: left;
-        padding-right: 30px;
+        padding-right: 15%;
         padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     h3 {
